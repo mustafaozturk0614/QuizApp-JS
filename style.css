@@ -1,0 +1,52 @@
+:root {
+
+    --todobody: #121519;
+    --tddark: #111827;
+    --tdgreen: #448C74;
+    --tdred: #E75050;
+    --tdyellow: #EDCB50;
+    --tddark2: #1a1e23;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.survey {
+    margin-top: 5rem;
+    padding: 1rem;
+    border: 0.5px solid grey;
+    border-radius: 50px;
+    width: 50vw;
+    box-shadow: 1px 1px 5px 1px gray;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 4rem;
+    color: var(--tdred) !important;
+    display: flex;
+    padding: 1rem;
+    font-weight: 700;
+
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+}
+
+.row input {
+    height: 18px;
+}
+
+.btn {
+    margin-top: 2rem !important;
+    border-radius: 20px;
+}
+
+body {}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="m-2 fixed-top">
+        <h4 class="time">süre :</h4>
+        <p id="demo"></p>
+    </div>
+    <div class="survey container d-flex flex-column align-items-center ">
+        <div class="intro  bg-white mb-5 mt-3">
+            <div class="container">
+                <h2 class="mb-2 mt-2 ">QUİZ</h2>
+            </div>
+        </div>
+        <div class="result d-none bg-light text-center">
+            <div class="container lead">
+                <p> Puanınız<span class="sonuc text-primary display-4 p-3"></span></p>
+            </div>
+        </div>
+        <form class="quiz-form text-light d-flex flex-column ">
+            <div class="">
+                <p class="mt-2 text-dark">1-Sql açılımı hangisidir ?</p>
+                <div class="row mt-1 text-black-50">
+
+                    <label class="form-check-label col-md-8"> <span class="text-dark mx-1">A)</span>Structured Question
+                        Language</label>
+                    <input class="col-md-3" type="radio" name="s1" value="A">
+                </div>
+                <div class="row  mt-1 text-black-50">
+
+                    <label class="col-md-8 form-check-label"><span class="text-dark mx-1">B)</span>Structured Query
+                        Language</label>
+                    <input class="col-md-3" type="radio" name="s1" value="B">
+                </div>
+                <div class="row mt-1  text-black-50">
+
+                    <label class="col-md-8 form-check-label"><span class="text-dark mx-1">C)</span>Question
+                        Language</label>
+                    <input class="col-md-3" type="radio" name="s1" value="C">
+                </div>
+            </div>
+            <div class="">
+                <p class="mt-2  text-dark">Veri tabanında güncelleme yapmak için kullanılan komut hangisidir</p>
+                <div class="row mt-1 text-black-50">
+                    <label class="col-md-8 form-check-label"><span class="text-dark mx-1">A)</span>SAVE AS</label>
+                    <input class="col-md-3" type="radio" name="s2" value="A">
+
+                </div>
+                <div class="row mt-1 text-black-50">
+
+                    <label class="col-md-8 form-check-label"><span class="text-dark mx-1">b)</span>UPDATE</label>
+                    <input class="col-md-3" type="radio" name="s2" value="B">
+                </div>
+                <div class="row mt-1 text-black-50">
+
+                    <label class="col-md-8 form-check-label"><span class="text-dark mx-1">C)</span>MODİFY</label>
+                    <input class="col-md-3" type="radio" name="s2" value="C">
+                </div>
+
+            </div>
+            <div class="">
+                <p class="mt-2  text-dark">Veri tabanında silme işlemi için kullanılan komut hangisidir ?</p>
+                <div class="row mt-1 text-black-50">
+
+                    <label class="col-md-8 form-check-label"><span class="text-dark mx-1">A)</span>DELETE</label>
+                    <input class="col-md-3" type="radio" name="s3" value="A">
+
+                </div>
+                <div class="row mt-1 text-black-50">
+
+                    <label class="col-md-8  form-check-label"><span class="text-dark mx-1">B)</span>REMOVE</label>
+                    <input class="col-md-3" type="radio" name="s3" value="B">
+                </div>
+                <div class="row mt-1 text-black-50">
+
+                    <label class="col-md-8  form-check-label"><span class="text-dark mx-1"> C)</span>COLLAPSE</label>
+                    <input class="col-md-3" type="radio" name="s3" value="c">
+                </div>
+            </div>
+            <div class="">
+                <p class="mt-2  text-dark">Veri tabanında yeni kayıt eklemek için kullanılan komut hangisidir ?</p>
+                <div class="row mt-1 text-black-50">
+
+
+                    <label class="col-md-8 form-check-label"><span class="text-dark mx-1">A)</span>INSERT INTO</label>
+                    <input class="col-md-3" type="radio" name="s4" value="A">
+                </div>
+                <div class="row mt-1 text-black-50">
+
+                    <label class="col-md-8 form-check-label"><span class="text-dark mx-1">B)</span>ADD RECORD</label>
+                    <input class="col-md-3" type="radio" name="s4" value="B">
+                </div>
+                <div class="row mt-1 text-black-50">
+
+                    <label class="col-md-8 form-check-label"><span class="text-dark mx-1">C)</span>INSERT NEW</label>
+                    <input class="col-md-3" type="radio" name="s4" value="C">
+
+                </div>
+            </div>
+            <div class="">
+                <p class="mt-2  text-dark">Personel tablosundan isim alanını getiren sorgu hangisidir?</p>
+                <div class="row mt-1 text-black-50 ">
+                    <label class="col-md-8 form-check-label"><span class="text-dark mx-1">A)</span>Select
+                        isim.personel</label>
+                    <input class="col-md-3" type="radio" name="s5" value="A">
+                </div>
+                <div class="row mt-1  text-black-50 ">
+
+                    <label class="col-md-8  form-check-label"><span class="text-dark mx-1">B)</span>Extract isim from
+                        personel</label>
+                    <input class="col-md-3" type="radio" name="s5" value="B">
+                </div>
+                <div class="row mt-1  text-black-50 ">
+
+                    <label class="col-md-8 form-check-label"><span class="text-dark mx-1">C)</span>Select isim from
+                        personel</label>
+                    <input class="col-md-3" type="radio" name="s5" value="C">
+                </div>
+            </div>
+            <input class="btn btn-outline-primary mt-3 mb-3" type="button" value="Tamamla" onclick="information()">
+
+        </form>
+    </div>
+    <script src="app.js"> </script>
+</body>
+
+</html>
